@@ -1,0 +1,81 @@
+INSERT INTO Category (categoryName) VALUES
+('IT - Software'),
+('Marketing'),
+('Finance');
+
+select * From Category c 
+
+-- Thêm người dùng mẫu vào bảng Users
+INSERT INTO [dbo].[Users] (
+    [roleId], [username], [password], [email], [dateOfBirth], 
+    [gender], [phone], [address], [status], [resetToken]
+) VALUES 
+-- User 1: Admin nam
+(1, 'admin01', 'hashedpassword1', 'admin01@example.com', '1990-01-15', 0, '0909123456', '123 Main St, Hanoi', 1, NULL),
+
+-- User 2: Recruiter nữ
+(2, 'recruiter01', 'hashedpassword2', 'recruiter01@example.com', '1992-05-20', 1, '0912345678', '456 Le Loi, Da Nang', 1, NULL),
+
+-- User 3: Ứng viên nam
+(3, 'candidate01', 'hashedpassword3', 'candidate01@example.com', '1995-09-10', 0, '0987654321', '789 Tran Hung Dao, HCMC', 1, NULL),
+
+-- User 4: Ứng viên nữ bị khóa tài khoản
+(3, 'candidate02', 'hashedpassword4', 'candidate02@example.com', '1998-12-25', 1, '0933444555', '321 Nguyen Trai, Can Tho', 0, NULL);
+
+
+INSERT INTO JobSeeker (userId, skills, industry, experience, position, profession, location, salary)
+VALUES 
+(1, N'C#, SQL, ASP.NET', N'Công nghệ thông tin', N'3 năm', N'Lập trình viên', N'Phát triển phần mềm', N'Hà Nội', N'15 triệu'),
+(2, N'Java, Spring Boot', N'Công nghệ thông tin', N'2 năm', N'Lập trình viên Java', N'Phát triển phần mềm', N'Hồ Chí Minh', N'14 triệu'),
+(3, N'Python, Machine Learning', N'Trí tuệ nhân tạo', N'1 năm', N'Data Scientist', N'Phân tích dữ liệu', N'Đà Nẵng', N'18 triệu');
+
+INSERT INTO CV (seekerId, cvStatus, cvLink)
+VALUES 
+(1, 1, 0x), -- pending
+(2, 0, 0x), -- accepted
+(3, 2, 0x); -- bị từ chối
+
+INSERT INTO Job (
+    recruiterId, categoryId, jobTitle, jobDescription, requirements, location,
+    position, experience, skills, gender, profession, jobType, numberOfSeeker,
+    salary, workingTime, createDate, endDate, status
+)
+VALUES 
+(NULL, NULL, N'Lập trình viên Backend', N'Phát triển hệ thống web API', 
+ N'3 năm kinh nghiệm, biết SQL', N'Hà Nội', N'Lập trình viên', N'3 năm', 
+ N'C#, ASP.NET, SQL', N'Không yêu cầu', N'Công nghệ phần mềm', 
+ N'Full-time', 2, N'15-20 triệu', N'Từ thứ 2 đến thứ 6', '20250601', '20250701', 1),
+
+(NULL, NULL, N'Lập trình viên Java', N'Phát triển hệ thống Java Spring', 
+ N'2 năm kinh nghiệm, biết MySQL', N'Hồ Chí Minh', N'Lập trình viên', N'2 năm', 
+ N'Java, Spring Boot', N'Nam', N'Công nghệ thông tin', 
+ N'Full-time', 1, N'14-16 triệu', N'Từ thứ 2 đến thứ 6', '20250602', '20250715', 1),
+
+(NULL, NULL, N'Chuyên viên phân tích dữ liệu', N'Phân tích dữ liệu khách hàng cho sản phẩm', 
+ N'Biết Python, ML cơ bản', N'Đà Nẵng', N'Data Scientist', N'1 năm', 
+ N'Python, ML', N'Nữ', N'Phân tích dữ liệu', 
+ N'Part-time', 1, N'18 triệu', N'Linh hoạt', '20250603', '20250730', 1);
+
+INSERT INTO Application (jobId, cvId, submitDate, status)
+VALUES 
+(1, 1, '20250605', 1), -- pending
+(2, 2, '20250605', 0), -- accepted
+(3, 3, '20250605', 2); -- từ chối
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
