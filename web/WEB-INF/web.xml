@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+<web-app version="6.0"
+         xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+
     <servlet>
         <servlet-name>ReviewCVController</servlet-name>
         <servlet-class>Controller.ReviewCVController</servlet-class>
     </servlet>
+
+    <servlet>
+        <servlet-name>JobController</servlet-name>
+        <servlet-class>Controller.JobController</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>ReviewCVController</servlet-name>
         <url-pattern>/ReviewCVController</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>JobController</servlet-name>
+        <url-pattern>/JobController</url-pattern>
+    </servlet-mapping>
+
 </web-app>
