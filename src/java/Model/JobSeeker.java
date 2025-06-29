@@ -1,15 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Model;
 
-/**
- *
- * @author Lawliez57
- */
 public class JobSeeker {
-
     private int seekerid;
     private int userid;
     private String skills ;
@@ -21,7 +12,7 @@ public class JobSeeker {
     private String salary;
 
     public JobSeeker() {
-        
+
     }
 
     public JobSeeker(int seekerid, int userid, String skills, String industry, String experience, String position, String profession, String location, String salary) {
@@ -107,9 +98,4 @@ public class JobSeeker {
     public void setSalary(String salary) {
         this.salary = salary;
     }
-
-    
-    
-    
-    
 }

@@ -1,15 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Model;
 
-/**
- *
- * @author Lawliez57
- */
 public class Company {
-
     private int companyId;
     private String companyName;
     private String city;
@@ -26,10 +17,10 @@ public class Company {
     private String imageCompany;
     private String logoCompany;
     private int statusCompany;
-    
-    
+
+
     public Company() {
-        
+
     }
 
     public Company(int companyId, String companyName, String city, String district, String commune, String address, String location, String phone, String email, String website, String description, String detail, String companyType, String imageCompany, String logoCompany, int statusCompany) {
@@ -50,7 +41,7 @@ public class Company {
         this.logoCompany = logoCompany;
         this.statusCompany = statusCompany;
     }
-    
+
     public int getCompanyId() {
         return companyId;
     }
@@ -179,9 +170,4 @@ public class Company {
     public void setStatusCompany(int statusCompany) {
         this.statusCompany = statusCompany;
     }
-    
-    
-    
-    
-    
 }

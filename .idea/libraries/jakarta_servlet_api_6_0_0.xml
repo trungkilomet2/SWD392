@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jakarta.servlet-api-6.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/sqljdbc_12.10.1.0_enu/sqljdbc_12.10/enu/jars/mssql-jdbc-12.10.1.jre11.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jakarta.servlet-api-6.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

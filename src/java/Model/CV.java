@@ -1,10 +1,9 @@
 package Model;
 
 public class CV {
-    
-        
+
     private int cvId;
-        private int seekerId;
+    private int seekerId;
     private int cvStatus;
     private byte[] cvLink;
 
@@ -18,7 +17,7 @@ public class CV {
         this.cvLink = cvLink;
     }
 
-    
+
 
     public int getCvId() {
         return cvId;
@@ -51,7 +50,4 @@ public class CV {
     public void setCvLink(byte[] cvLink) {
         this.cvLink = cvLink;
     }
-
-
-
 }

@@ -1,18 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Model;
 
-/**
- *
- * @author Lawliez57
- */
 public class Application {
-    
-    
     private int application;
-        private int jobid;
+    private int jobid;
     private int cvid;
     private String submitDate;
     private int status;
@@ -68,10 +58,4 @@ public class Application {
         this.status = status;
     }
 
-    
-    
-    
-    
-    
-    
 }

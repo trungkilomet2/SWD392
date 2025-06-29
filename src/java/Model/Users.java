@@ -1,17 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Model;
-
 import java.util.Date;
-
-/**
- *
- * @author Lawliez57
- */
 public class Users {
-        
     private int userId;
     private int roleId;
     private String username;
@@ -23,9 +12,9 @@ public class Users {
     private String address;
     private int status;
 
-    
+
     public Users() {
-        
+
     }
 
     public Users(int userId, int roleId, String username, String password, String email, Date dateOfBirth, int gender, String phone, String address, int status) {
@@ -39,14 +28,14 @@ public class Users {
         this.phone = phone;
         this.address = address;
         this.status = status;
-    
-        
-        
 
-        
-    
-    
-}
+
+
+
+
+
+
+    }
 
     public int getUserId() {
         return userId;
@@ -127,5 +116,4 @@ public class Users {
     public void setStatus(int status) {
         this.status = status;
     }
-
 }
