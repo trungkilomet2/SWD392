@@ -1,15 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Model;
 
-/**
- *
- * @author Lawliez57
- */
 public class Category {
-    
+
     private int categoryId;
     private String categoryName;
     private String categoryImage;
@@ -19,10 +11,10 @@ public class Category {
         this.categoryName = categoryName;
         this.categoryImage = categoryImage;
     }
-    
-    
+
+
     public Category() {
-        
+
     }
 
     public int getCategoryId() {
@@ -48,9 +40,5 @@ public class Category {
     public void setCategoryImage(String categoryImage) {
         this.categoryImage = categoryImage;
     }
-    
-    
-    
-    
-    
+
 }

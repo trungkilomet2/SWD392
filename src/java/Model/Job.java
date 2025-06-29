@@ -1,21 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Model;
 
-/**
- *
- * @author Lawliez57
- */
-
-// Quan ly job
 public class Job {
-
     private int jobId;
     private int recruiterId;
     private int categoryId;
-    private String jobTittle;
+    private String jobTitle;
     private String jobDescription;
     private String requirements;
     private String location;
@@ -31,16 +20,16 @@ public class Job {
     private String createDate;
     private String endDate;
     private int status;
-    
+
     public Job() {
-        
+
     }
 
-    public Job(int jobId, int recruiterId, int categoryId, String jobTittle, String jobDescription, String requirements, String location, String position, String experience, String skills, String gender, String profession, String jobType, int numberOfSeeker, String salary, String workingTime, String createDate, String endDate, int status) {
+    public Job(int jobId, int recruiterId, int categoryId, String jobTitle, String jobDescription, String requirements, String location, String position, String experience, String skills, String gender, String profession, String jobType, int numberOfSeeker, String salary, String workingTime, String createDate, String endDate, int status) {
         this.jobId = jobId;
         this.recruiterId = recruiterId;
         this.categoryId = categoryId;
-        this.jobTittle = jobTittle;
+        this.jobTitle = jobTitle;
         this.jobDescription = jobDescription;
         this.requirements = requirements;
         this.location = location;
@@ -83,11 +72,11 @@ public class Job {
     }
 
     public String getJobTittle() {
-        return jobTittle;
+        return jobTitle;
     }
 
-    public void setJobTittle(String jobTittle) {
-        this.jobTittle = jobTittle;
+    public void setJobTittle(String jobTitle) {
+        this.jobTitle = jobTitle;
     }
 
     public String getJobDescription() {
@@ -209,7 +198,5 @@ public class Job {
     public void setStatus(int status) {
         this.status = status;
     }
-    
-    
 
 }
