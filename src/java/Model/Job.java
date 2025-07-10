@@ -31,12 +31,20 @@ public class Job {
     private String createDate;
     private String endDate;
     private int status;
-    
+    private String companyName;
+    private String companyLogo;
+    private String jobTitle;
+
+
     public Job() {
         
     }
 
-    public Job(int jobId, int recruiterId, int categoryId, String jobTittle, String jobDescription, String requirements, String location, String position, String experience, String skills, String gender, String profession, String jobType, int numberOfSeeker, String salary, String workingTime, String createDate, String endDate, int status) {
+    public Job(int jobId, int recruiterId, int categoryId, String jobTittle, String jobDescription, String requirements,
+               String location, String position, String experience, String skills, String gender, String profession,
+               String jobType, int numberOfSeeker, String salary, String workingTime, String createDate, String endDate, int status,
+               String companyName, String companyLogo, String jobTitle
+        ) {
         this.jobId = jobId;
         this.recruiterId = recruiterId;
         this.categoryId = categoryId;
@@ -56,6 +64,37 @@ public class Job {
         this.createDate = createDate;
         this.endDate = endDate;
         this.status = status;
+        this.companyName = companyName;
+        this.companyLogo = companyLogo;
+        this.jobTitle = jobTitle;
+    }
+
+    public String getJobTitle() {
+        return jobTitle;
+    }
+
+    public void setJobTitle(String jobTitle) {
+        if (jobTitle == null || jobTitle.trim().isEmpty()) {
+            throw new IllegalArgumentException("Job title cannot be empty");
+        }
+        this.jobTitle = jobTitle.trim();
+    }
+
+    // Add getters and setters
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getCompanyLogo() {
+        return companyLogo;
+    }
+
+    public void setCompanyLogo(String companyLogo) {
+        this.companyLogo = companyLogo;
     }
 
     public int getJobId() {
