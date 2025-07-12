@@ -83,7 +83,8 @@
 </head>
 <body>
     <h1>CV Review System</h1>
-    <div class="cv-container">
+    <c:forEach var="a" items="${listApp}">
+        <div class="cv-container">
             <div class="cv-item">
                 <div class="cv-details">
                     <h3>Tên Người Đăng ký</h3>
@@ -97,6 +98,8 @@
                 </div>
             </div>
     </div>
+    </c:forEach>
+    
 </body>
 </html>
 ```
